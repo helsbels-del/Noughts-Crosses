@@ -64,6 +64,17 @@
 .playerX {
     color: darkblue;
 }
+.call.report{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+   
+
+    /*margin-left: 100px;
+    margin-top: 10px;*/
+}
 
 .button {
     display: flex;   
