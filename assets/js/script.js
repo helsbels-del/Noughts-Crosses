@@ -50,7 +50,7 @@ function handleResultValidation(){
 
     if (gameWon) {
         report(currentPlayer === 'O' ? PLAYERO_WINS : PLAYERX_WINS);
-        isGAmeActive = false;
+        isGameActive = false;
         return;
     }
 
