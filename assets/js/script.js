@@ -70,7 +70,7 @@ const report = (type) => {
                 case DRAW:
                     report.innerHTML = 'Draw';
     }
-    report.classList.remove('hide');
+    reported.classList.remove('hide');
     }
 
     const isValidAction = (box) => {
@@ -87,8 +87,8 @@ const report = (type) => {
 const changePlayer = () => {
     playerCall.classList.remove(`player${currentPlayer}`);
     currentPlayer = currentPlayer ==='O' ? 'X': 'O';
-    playerDisplay.innerText = currentPlayer;
-    playerDisplay.classList.add(`player${currentPlayer}`);
+    playerCall.innerText = currentPlayer;
+    playerCall.classList.add(`player${currentPlayer}`);
 }
 
 const playerAction = (box, index) => {
