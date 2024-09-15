@@ -70,7 +70,7 @@ const report = (type) => {
                     reported.innerHTML = 'Draw';
     }
     reported.classList.remove('hide');
-    }
+    };
 
     const isValidAction = (box) => {
         if (box.innerText === 'O' || box.innerText === 'X'){
