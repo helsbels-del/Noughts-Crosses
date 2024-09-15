@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const boxes = Array.from(document.querySelectorAll('.box'));
-    const playerCall = documentt.querySelector('.callplayer');
+    const playerCall = document.querySelector('.callplayer');
     const replayButton = document.querySelector('#replay');
     const reported = document.querySelector('.report');
 
