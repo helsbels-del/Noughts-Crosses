@@ -9,17 +9,18 @@
 }
 
 .page {
-    background-color: #4b1111;
+    background-color:rgb(14, 186, 238);
     height: 100vh;
     padding-top: 1px;
 }
 
 .heading {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 80px 50px;
+    margin-top: 80px;
     font-family:  "SUSE", sans-serif;
-    color: aliceblue;
+    color: hsl(208, 56%, 25%);
 
 } 
 
@@ -32,7 +33,7 @@
 }
 
 .box {
-    border: 1px solid white;
+    border: 2px solid black;
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -40,5 +41,5 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(141, 141, 149);
 }
