@@ -34,7 +34,7 @@ const  winningCombinations = [
 function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
-        const winPosition = winningPositions[i];
+        const winPosition = winningCombinations[i];
         const x = game[winPosition[0]];
         const y = game[winPosition[1]];
         const z = game[winPosition[2]];
