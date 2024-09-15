@@ -118,9 +118,9 @@ const replayGame = () => {
 
 
 
-boxes.forEach( (box, index) => {
-    box.addEventListener('click', () => playerAction(box, index));
-})
+    boxes.forEach( (box, index) => {
+        box.addEventListener('click', () => playerAction(box, index));
+    });
 
 replayButton.addEventListener('click', replayGame);
 });
