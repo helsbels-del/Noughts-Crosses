@@ -14,7 +14,7 @@ const PLAYERX_WINS = 'PLAYEX_WINS';
 const DRAW = 'DRAW';
 
 /*
-Indexes within the board
+Indexes within the game
 [0] [1] [2]
 [3] [4] [5]
 [6] [7] [8]
@@ -35,9 +35,9 @@ function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
         const winPosition = winningPositions[i];
-        const x = board[winPosition[0]];
-        const y = board[winPosition[1]];
-        const z = board[winPosition[2]];
+        const x = game[winPosition[0]];
+        const y = game[winPosition[1]];
+        const z = game[winPosition[2]];
         if (x === '' || y === '' || z === '') {
             continue;
             }
@@ -54,7 +54,7 @@ function handleResultValidation(){
         return;
     }
 
-    if (!boad.includes(''))
+    if (!game.includes(''))
         report(DRAW);
     
     }
@@ -81,7 +81,7 @@ const report = (type) => {
     };    
 
     const updateScore = (index) => {
-        board[index] = currentPlayer;
+        game[index] = currentPlayer;
     }
 
 const changePlayer = () => {
@@ -101,8 +101,8 @@ const playerAction = (box, index) => {
     }
 }
 
-const replayBoard = () => {
-    board = ['', '', '', '', '', '', '', '', ''];
+const replayGame = () => {
+    game = ['', '', '', '', '', '', '', '', ''];
     isGameActive = true;
     report,classList.add('hide');
 
@@ -124,5 +124,5 @@ boxes.forEach( (box, index) => {
 })
 
 
-    replayButton.addEventListener('click', replayBoard);
+    replayButton.addEventListener('click', replayGame);
 });
