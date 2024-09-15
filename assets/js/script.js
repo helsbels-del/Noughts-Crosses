@@ -122,5 +122,5 @@ const replayGame = () => {
         box.addEventListener('click', () => playerAction(box, index));
     });
 
-replayButton.addEventListener('click', replayGame);
+    replayButton.addEventListener('click', replayGame);
 });
