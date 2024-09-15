@@ -1,9 +1,9 @@
-window.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('DOMContentLoaded', () => {
 
 const boxes = Array.from(documnet.querSelectorAll('.box'));
 const playerCall = documnet.querySelector('.callplayer');
 const replayButton = documnt.querselector('#replay');
-const announcer = document.querySelector('.announcer');
+const reported = document.querySelector('.report');
 
 let game = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'O';
@@ -81,12 +81,12 @@ const report = (type) => {
     };    
 
     const updateScore = (index) => {
-        board[index] = currentPlayet;
+        board[index] = currentPlayer;
     }
 
 const changePlayer = () => {
-    playerDisplay.classList.remove(`player${currentPlayer}`);
-    currentPlayer = currentPlayer ==='O' ? 'X';
+    playerCall.classList.remove(`player${currentPlayer}`);
+    currentPlayer = currentPlayer ==='O' ? 'X': 'O';
     playerDisplay.innerText = currentPlayer;
     playerDisplay.classList.add(`player${currentPlayer}`);
 }
@@ -120,9 +120,9 @@ const replayBoard = () => {
 
 
 boxes.forEach( (box, index) => {
-    box.addEventListener('click', () => UserActivation(box, index));
+    box.addEventListener('click', () => playerAction(box, index));
 })
 
 
-    replayButton.addEventListener('click', resetBoard);
-})
+    replayButton.addEventListener('click', replayBoard);
+});
