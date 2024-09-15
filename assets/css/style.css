@@ -18,14 +18,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 50px;
     font-family:  "SUSE", sans-serif;
-    color: hsl(208, 56%, 25%);
+    color: hsl(208, 100%, 18%);
 
 } 
 
 .game-board {
-    margin: 80px auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
@@ -33,7 +33,7 @@
 }
 
 .box {
-    border: 2px solid black;
+    border: 2px solid rgb(14, 186, 238);
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -41,5 +41,36 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
-    background-color: rgb(141, 141, 149);
+    background-color: rgb(206, 206, 218);
+}
+
+.players {
+    color:hsl(208, 100%, 18%);
+    font-size: 25px;
+    text-align: center;
+   
+
+}
+
+.playerO {
+    color: rgb(236, 240, 12);
+
+}
+
+.playerX {
+    color: darkblue;
+}
+
+.button {
+    display: flex;   
+    justify-content: center;   
+    margin-top: 30px;
+}
+#replay {
+    background-color: hsl(208, 100%, 18%);
+    color: rgb(14, 186, 238);
+    padding: 10px;    
+    font-size: 20px;   
+    cursor: pointer;
+    border: none;
 }
