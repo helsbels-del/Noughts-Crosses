@@ -1,9 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
-
-const boxes = Array.from(documnet.querSelectorAll('.box'));
-const playerCall = documnet.querySelector('.callplayer');
-const replayButton = documnt.querselector('#replay');
-const reported = document.querySelector('.report');
+    const boxes = Array.from(document.querySelectorAll('.box'));
+    const playerCall = documentt.querySelector('.callplayer');
+    const replayButton = document.querySelector('#replay');
+    const reported = document.querySelector('.report');
 
 let game = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'O';
