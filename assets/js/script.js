@@ -10,7 +10,7 @@ let currentPlayer = 'O';
 let isGameActive = true;
 
 const PLAYERO_WINS = 'PLAYERO_WINS';
-const PLAYERX_WINS = 'PLAYEX_WINS';
+const PLAYERX_WINS = 'PLAYERX_WINS';
 const DRAW = 'DRAW';
 
 /*
