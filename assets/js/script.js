@@ -104,7 +104,7 @@ const playerAction = (box, index) => {
 const replayGame = () => {
     game = ['', '', '', '', '', '', '', '', ''];
     isGameActive = true;
-    report,classList.add('hide');
+    report.classList.add('hide');
 
     if (currentPlayer === 'O') {
         changePlayer();
@@ -123,6 +123,5 @@ boxes.forEach( (box, index) => {
     box.addEventListener('click', () => playerAction(box, index));
 })
 
-
-    replayButton.addEventListener('click', replayGame);
+replayButton.addEventListener('click', replayGame);
 });
