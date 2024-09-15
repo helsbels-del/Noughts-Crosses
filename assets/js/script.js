@@ -103,7 +103,7 @@ const playerAction = (box, index) => {
 const replayGame = () => {
     game = ['', '', '', '', '', '', '', '', ''];
     isGameActive = true;
-    report.classList.add('hide');
+    reported.classList.add('hide');
 
     if (currentPlayer === 'X') {
         changePlayer();
