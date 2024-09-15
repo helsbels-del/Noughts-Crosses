@@ -106,7 +106,7 @@ const replayGame = () => {
     isGameActive = true;
     report.classList.add('hide');
 
-    if (currentPlayer === 'O') {
+    if (currentPlayer === 'X') {
         changePlayer();
          }
 
