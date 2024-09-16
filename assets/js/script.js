@@ -61,10 +61,10 @@ function handleResultValidation(){
 const report = (type) => {
     switch(type){
         case PLAYERO_WINS:
-            reported.innerHTML = 'Player <span class="playerO">O</span> WINS';
+            reported.innerHTML = 'Player <span id="pO" class="playerO">O</span> WINS';
             break;
             case PLAYERX_WINS:
-                reported.innerHTML = 'Player <span class="playerX">X</span> WINS';
+                reported.innerHTML = 'Player <span id ="pX" class="playerX">X</span> WINS';
                 break;
                 case DRAW:
                     reported.innerHTML = 'Draw';
