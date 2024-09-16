@@ -58,14 +58,12 @@
 
 .playerO {
     color: rgb(236, 240, 12);
-    padding-left: 3px;
-    padding-right: 3px;
+    
 }
 
 .playerX {
     color: darkblue;
-    padding-left: 3px;
-    padding-right: 3px;
+   
 }
 
 .score-tally{
@@ -74,18 +72,31 @@
     margin-top: 30px;
 }
 
+#pO.playerO{
+    padding-right: 5px;
+    padding-left: 3px;
+}
+#pX.playerX{
+    padding-right: 5px;
+    padding-left: 3px;
+}
+
 .yellowO{
     color:rgb(236, 240, 12);
-    padding-right: 5px;
+    padding-right: 3px;
     padding-left: 3px;
     font-size: 25px;
 }
 
 .blueX{
     color:darkblue;
-    padding-right: 5px;
+    padding-right: 3px;
     padding-left: 3px;
     font-size: 25px;
+}
+
+#scoreO, #scoreX {
+    padding-left: 3px;
 }
 
 .call.report{
