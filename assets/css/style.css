@@ -69,8 +69,8 @@
 }
 
 .score-tally{
-    
-    margin-left: 100px;
+    display: flex;
+    justify-content:space-evenly;
     margin-top: 30px;
 }
 
