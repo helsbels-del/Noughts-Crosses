@@ -16,7 +16,7 @@
 
 .heading {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     margin-top: 50px;
     font-family:  "SUSE", sans-serif;
