@@ -62,9 +62,11 @@ const report = (type) => {
     switch(type){
         case PLAYERO_WINS:
             reported.innerHTML = 'Player <span id="pO" class="playerO">O</span> WINS';
+            countScoreO();
             break;
             case PLAYERX_WINS:
                 reported.innerHTML = 'Player <span id ="pX" class="playerX">X</span> WINS';
+                countScoreX();
                 break;
                 case DRAW:
                     reported.innerHTML = 'Draw';
@@ -124,3 +126,13 @@ const replayGame = () => {
 
     replayButton.addEventListener('click', replayGame);
 });
+
+function countScoreO() {
+    let oldscoreO = parseInt(document.getElementById("scoreO").number);
+    document.getElementById("scoreO").innerText.number = ++oldscoreO;
+}
+
+function countScoreX() {
+    let oldscoreX = parseInt(document.getElementById("scoreX").number);
+    document.getElementById("scoreX").innerText.number = ++oldscoreX;
+}
