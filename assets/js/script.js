@@ -1,4 +1,7 @@
+/*instruction for html to load before the JS is applied*/
+
 window.addEventListener('DOMContentLoaded', () => {
+/*create const and variables for calling elements from html*/
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerCall = document.querySelector('.call-player');
     const replayButton = document.querySelector('#replay');
@@ -29,7 +32,7 @@ const  winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-
+/* instruction for how to handle results */
 function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -57,6 +60,7 @@ function handleResultValidation(){
         report(DRAW);
     
     }
+/* instructionhow to show winner or draw status */
 
 const report = (type) => {
     switch(type){
@@ -73,7 +77,7 @@ const report = (type) => {
     }
     reported.classList.remove('hide');
     };
-
+/* how to show and change which player */
     const isValidAction = (box) => {
         if (box.innerText === 'O' || box.innerText === 'X'){
             return false;
@@ -102,6 +106,8 @@ const playerAction = (box, index) => {
     }
 }
 
+/* how to replay game at end */
+
 const replayGame = () => {
     game = ['', '', '', '', '', '', '', '', ''];
     isGameActive = true;
@@ -118,14 +124,13 @@ const replayGame = () => {
          });
 }
 
-
-
     boxes.forEach( (box, index) => {
         box.addEventListener('click', () => playerAction(box, index));
     });
 
     replayButton.addEventListener('click', replayGame);
 });
+/*tally score*/
 
 function countScoreO() {
     let oldscoreO = parseInt(document.getElementById("scoreO").innerText);
