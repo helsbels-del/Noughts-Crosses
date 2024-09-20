@@ -128,11 +128,11 @@ const replayGame = () => {
 });
 
 function countScoreO() {
-    let oldscoreO = parseInt(document.getElementById("scoreO").number);
-    document.getElementById("scoreO").innerText.number = ++oldscoreO;
+    let oldscoreO = parseInt(document.getElementById("scoreO").innerText);
+    document.getElementById("scoreO").innerText = ++oldscoreO;
 }
 
 function countScoreX() {
-    let oldscoreX = parseInt(document.getElementById("scoreX").number);
-    document.getElementById("scoreX").innerText.number = ++oldscoreX;
+    let oldscoreX = parseInt(document.getElementById("scoreX").innerText);
+    document.getElementById("scoreX").innerText = ++oldscoreX;
 }
