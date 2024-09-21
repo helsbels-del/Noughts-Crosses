@@ -1,11 +1,22 @@
-/*instruction for html to load before the JS is applied*/
+//instruction for html to load before the JS is applied 
 
 window.addEventListener('DOMContentLoaded', () => {
-/*create const and variables for calling elements from html*/
+//create const and variables for calling elements from html
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerCall = document.querySelector('.call-player');
     const replayButton = document.querySelector('#replay');
     const reported = document.querySelector('.report');
+    const twoplayergame = document.querySelector('#twoplayer');
+
+function gameSelector(){
+    radiotwoplayerChecked = document.getElementById("twoplayer").checked;
+    radioagainstpcChecked = docment.getElementById("againstpc").checked;
+
+    if (radiotwoplayerChecked && !radioagainstpcChecked) {
+        document.getElementById("tpgame");
+
+    }
+}
 
 let game = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'O';
@@ -32,7 +43,7 @@ const  winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-/* instruction for how to handle results */
+//instruction for how to handle results 
 function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -60,7 +71,7 @@ function handleResultValidation(){
         report(DRAW);
     
     }
-/* instructionhow to show winner or draw status */
+// instructionhow to show winner or draw status 
 
 const report = (type) => {
     switch(type){
@@ -77,7 +88,7 @@ const report = (type) => {
     }
     reported.classList.remove('hide');
     };
-/* how to show and change which player */
+// how to show and change which player 
     const isValidAction = (box) => {
         if (box.innerText === 'O' || box.innerText === 'X'){
             return false;
@@ -106,7 +117,7 @@ const playerAction = (box, index) => {
     }
 }
 
-/* how to replay game at end */
+// how to replay game at end 
 
 const replayGame = () => {
     game = ['', '', '', '', '', '', '', '', ''];
@@ -130,7 +141,7 @@ const replayGame = () => {
 
     replayButton.addEventListener('click', replayGame);
 });
-/*tally score*/
+//tally score
 
 function countScoreO() {
     let oldscoreO = parseInt(document.getElementById("scoreO").innerText);
