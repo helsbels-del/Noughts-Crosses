@@ -17,7 +17,7 @@ function gameSelector(){
 
     }
 }
-
+// Declare variables and create array for grid
 let game = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'O';
 let isGameActive = true;
@@ -32,7 +32,7 @@ Indexes within the game
 [3] [4] [5]
 [6] [7] [8]
 */
-
+//Winning combinations in the array 
 const  winningCombinations = [
     [0, 1, 2],
     [3, 4, 5],
@@ -43,7 +43,7 @@ const  winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-//instruction for how to handle results 
+//Function with for loop for checking for winning combinations.
 function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -58,19 +58,16 @@ function handleResultValidation(){
                 gameWon = true;
                 break;
             }
-
     }
-
     if (gameWon) {
         report(currentPlayer === 'O' ? PLAYERO_WINS : PLAYERX_WINS);
         isGameActive = false;
         return;
     }
-
     if (!game.includes(''))
-        report(DRAW);
-    
+        report(DRAW);    
     }
+    
 // instructionhow to show winner or draw status 
 
 const report = (type) => {
