@@ -56,7 +56,10 @@
 .hide {
     display: none !important;
 }
-
+img {
+    padding-top: 50px;
+    padding-left: 50px;
+}
 .game-board {
     margin: 30px auto;
     display: grid;
