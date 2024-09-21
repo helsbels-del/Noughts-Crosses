@@ -11,25 +11,26 @@
     <title>Noughts and Crosses</title>
 </head>
 <body>
+    <!-- Welcome page -->
     <section class="page">
-    <h1 class="heading">Noughts & Crosses</h1>    
+    <h1 class="heading">Noughts & Crosses</h1>  
+    <!-- Section to choose which type of game to play -->  
     <div class="welcome-screen">
-    <div class="welcome">
-    </div>
     <div class="game-type">
-     <p>How would you like to play?</p>
-     <input type="radio" class="game-choice" id="twoplayer">
-     <label for="twoplayer">2 player game</label>
-     <br>
-     <input type="radio" class="game-choice" id="againtspc">
-     <label for="againstpc">Play against computer</label>
+    <p>How would you like to play?</p>
+    <input type="radio" class="game-choice" id="twoplayer">
+    <label for="twoplayer">2 player game</label>
+    <br>
+    <input type="radio" class="game-choice" id="againtspc">
+    <label for="againstpc">Play against computer</label>
     </div>
     </div>
     <img src="assets/images/oxpicture.png">
     </section>
+    <!-- Two game player page -->
 <section class="page" id="tpgame">
-       <h1 class="heading">Noughts & Crosses</h1>
-
+    <h1 class="heading">Noughts & Crosses</h1>
+<!-- Game grid for noughts and crosses -->
     <div class="game-board">
     <div class="box"></div>
     <div class="box"></div>
@@ -41,22 +42,26 @@
     <div class="box"></div>
     <div class="box"></div>
     </div>
+<!-- States which players turn it is -->    
 <div class="players">
     Player <span class="call-player playerO">O</span>'s turn
 </div>
-
+<!-- Score tally section -->
 <div class="score-tally">
     <p class="score">Games won by <span class="yellowO">O</span>:<span id="scoreO">0</span></p>
     <br>
     <p class="score">Games won by <span class="blueX">X</span>:<span id="scoreX">0</span></p>
 
 </div>
+<!-- replay button -->
 <div class="button">
     <button id="replay">Replay</button>
 </div>
+<!-- shows result of game. Is hidden until game  is over. Controlled in JavaScript.-->
 <div class="call report hide"></div>
 
 </section>
+<!-- link to JS -->
   <script src="assets/js/script.js"></script> 
 </body>
 </html>
