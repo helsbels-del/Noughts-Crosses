@@ -24,13 +24,15 @@
     margin-top: 50px;
     font-family:  "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
+    font-size: 30px;
+    
 
 } 
 
 .welcome-screen {
     display: grid;
     margin-top: 50px;
-    border: 2px solid gray ; 
+    border: 2px dotted yellow ; 
     
     
 }
@@ -39,6 +41,7 @@
     font-family:  "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
     justify-self: center;
+   display: grid;
 
 }
 
@@ -47,6 +50,7 @@
     color: hsl(208, 100%, 18%);
     margin-top: 30px;
     justify-self: center;
+    font-size: 25px;
 }
 
 .hide {
