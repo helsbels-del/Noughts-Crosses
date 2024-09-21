@@ -8,6 +8,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.welcomepage{
+    display: none;
+}
 .page {
     background-color:rgb(14, 186, 238);
     height: 100vh;
