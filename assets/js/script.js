@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 countScoreX();
                 break;
             case DRAW:
-                reported.innerHTML = <span id="draw">'Draw';</span>
+                reported.innerHTML = 'Draw';
         }
 
         //remove hide class to show the result to the user
