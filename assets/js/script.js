@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         (againstpcgame.checked){
             document.getElementById('pcgame').style.display='block';
         }
-    }
+
+        }
         
     playButton.addEventListener('click', gameSelector);
 
