@@ -1,7 +1,8 @@
-//instruction for html to load before the JS is applied 
+//Event listener to listen for DOM content loaded, for html to load before the JS is applied 
 
 window.addEventListener('DOMContentLoaded', () => {
-//create const and variables for calling elements from html
+//create variables for calling elements from html.
+    //use array.from function for .box as querySelector All will return a note list. This will convert to proper array
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerCall = document.querySelector('.call-player');
     const replayButton = document.querySelector('#replay');
@@ -18,9 +19,12 @@ function gameSelector(){
     }
 }
 // Declare variables and create array for grid
+
 let game = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'O';
 let isGameActive = true;
+
+// Endgame states
 
 const PLAYERO_WINS = 'PLAYERO_WINS';
 const PLAYERX_WINS = 'PLAYERX_WINS';
@@ -32,6 +36,7 @@ Indexes within the game
 [3] [4] [5]
 [6] [7] [8]
 */
+
 //Winning combinations in the array 
 const  winningCombinations = [
     [0, 1, 2],
@@ -43,7 +48,7 @@ const  winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-//Function with for loop for checking for winning combinations.
+//Check if have a winner by looping through array of winning combinations.
 function handleResultValidation(){
     let gameWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -68,7 +73,7 @@ function handleResultValidation(){
         report(DRAW);    
     }
     
-// instructionhow to show winner or draw status 
+// To show endgame status
 
 const report = (type) => {
     switch(type){
@@ -83,26 +88,32 @@ const report = (type) => {
                 case DRAW:
                     reported.innerHTML = 'Draw';
     }
+
+//remove hide class to show the result to the user
+
     reported.classList.remove('hide');
     };
-// how to show and change which player 
+//checks if box has a value already
+
     const isValidAction = (box) => {
         if (box.innerText === 'O' || box.innerText === 'X'){
             return false;
         }
         return true;
     };    
-
+// updates the current player score at end of game
     const updateScore = (index) => {
         game[index] = currentPlayer;
     }
-
+// changePlayer function to update player display
 const changePlayer = () => {
     playerCall.classList.remove(`player${currentPlayer}`);
     currentPlayer = currentPlayer ==='O' ? 'X': 'O';
     playerCall.innerText = currentPlayer;
     playerCall.classList.add(`player${currentPlayer}`);
 }
+
+// Implement playerAction function Represents a turn in the game. This function will be called when a person clicks on a box
 
 const playerAction = (box, index) => {
     if(isValidAction(box) && isGameActive) {
@@ -114,7 +125,7 @@ const playerAction = (box, index) => {
     }
 }
 
-// how to replay game at end 
+// Reset game 
 
 const replayGame = () => {
     game = ['', '', '', '', '', '', '', '', ''];
@@ -131,13 +142,17 @@ const replayGame = () => {
             box.classList.remove('playerX');
          });
 }
+// Attach event listener to each box in the game grid
 
     boxes.forEach( (box, index) => {
         box.addEventListener('click', () => playerAction(box, index));
     });
 
+//click handler to reset game
+
     replayButton.addEventListener('click', replayGame);
 });
+
 //tally score
 
 function countScoreO() {
