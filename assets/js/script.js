@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function homeSelector() {
         document.getElementById("page").style.display = 'block';
+        document.getElementById("tpgame").style.display = 'none';
+        document.getElementById("pcgame").style.display = 'none';
     }
 
     homeButton.addEventListener('click', homeSelector);
@@ -99,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 countScoreX();
                 break;
             case DRAW:
-                reported.innerHTML = 'Draw';
+                reported.innerHTML = <span id="draw">'Draw';</span>
         }
 
         //remove hide class to show the result to the user
