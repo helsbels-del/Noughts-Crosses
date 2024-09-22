@@ -147,6 +147,7 @@ h2 {
     align-content: center;
     flex-wrap: wrap;
     padding-top: 20px;
+    font-size: 30px;
    
 
     /*margin-left: 100px;
@@ -167,5 +168,7 @@ h2 {
     border: none;
 }
 
-
+#draw {
+    color: lightgreen;
+}
 
