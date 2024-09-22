@@ -6,16 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerCall = document.querySelector('.call-player');
     const replayButton = document.querySelector('#replay');
+    const playButton = document.querySelector('#play');
     const reported = document.querySelector('.report');
     const twoplayergame = document.querySelector('#twoplayer');
     const againstpcgame = document.querySelector('#againstpc');
 
 
         function gameSelector(){
-    if (twoplayergame.checked && !againstpcgame.checked) {
-        document.getElementById("tpgame");
+    if (twoplayergame.checked){
+        document.getElementById("tpgame").style.display='block';
+    } else if 
+        (againstpcgame.checked){
+            document.getElementById('pcgame').style.display='block';
+        }
     }
-}
+        
+    playButton.addEventListener('click', gameSelector);
+
 // Declare variables and create array for grid
 
 let game = ['', '', '', '', '', '', '', '', ''];
