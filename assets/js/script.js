@@ -12,27 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const twoplayergame = document.querySelector('#twoplayer');
     const againstpcgame = document.querySelector('#againstpc');
 
-
-    function gameSelector() {
-        document.getElementById("page").style.display = 'none';
-        if (twoplayergame.checked) {
-            document.getElementById("tpgame").style.display = 'block';
-        } else if (againstpcgame.checked) {
-            document.getElementById('pcgame').style.display = 'block';
-        }
-
-    }
-
-    playButton.addEventListener('click', gameSelector);
-
-    function homeSelector() {
-        document.getElementById("page").style.display = 'block';
-        document.getElementById("tpgame").style.display = 'none';
-        document.getElementById("pcgame").style.display = 'none';
-    }
-
-    homeButton.addEventListener('click', homeSelector);
-
     // Declare variables and create array for grid
 
     let game = ['', '', '', '', '', '', '', '', ''];
@@ -44,6 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const PLAYERO_WINS = 'PLAYERO_WINS';
     const PLAYERX_WINS = 'PLAYERX_WINS';
     const DRAW = 'DRAW';
+    
+    // Choosing which game to play and return to home page
+
+    function gameSelector() {
+        document.getElementById("page").style.display = 'none';
+        if (twoplayergame.checked) {
+            document.getElementById("tpgame").style.display = 'block';
+        } else if (againstpcgame.checked) {
+            document.getElementById('pcgame').style.display = 'block';
+        }
+        }
+
+    playButton.addEventListener('click', gameSelector);
+
+    function homeSelector() {
+        document.getElementById("page").style.display = 'block';
+        document.getElementById("tpgame").style.display = 'none';
+        document.getElementById("pcgame").style.display = 'none';
+    }
+
+    homeButton.addEventListener('click', homeSelector);
 
     /*
     Indexes within the game
