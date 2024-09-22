@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         function gameSelector(){
+          document.getElementById("page").style.display='none';  
     if (twoplayergame.checked){
         document.getElementById("tpgame").style.display='block';
     } else if 
