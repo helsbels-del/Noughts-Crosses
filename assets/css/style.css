@@ -32,33 +32,44 @@
 .welcome-screen {
     display: grid;
     margin-top: 50px;
-    border: 2px dotted yellow ; 
+    
     
     
 }
 
-.welcome {
-    font-family:  "SUSE", sans-serif;
-    color: hsl(208, 100%, 18%);
-    justify-self: center;
-   display: grid;
-
-}
 
 .game-type {
     font-family:  "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
     margin-top: 30px;
+    margin-bottom: 30px;
     justify-self: center;
-    font-size: 25px;
+    font-size: 20px;
+    border: 5px dotted yellow ; 
+}
+
+.game-choice {
+    margin-left: 5px;
+}
+
+#question {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buttons {
+    padding-left: 30px;
+    padding-bottom: 10px;
 }
 
 .hide {
     display: none !important;
 }
 img {
-    padding-top: 50px;
+    margin-top: 50px;
     padding-left: 50px;
+    justify-self: center;
 }
 .game-board {
     margin: 30px auto;
