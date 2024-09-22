@@ -1,6 +1,6 @@
 //Event listener to listen for DOM content loaded, for html to load before the JS is applied 
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 //create variables for calling elements from html.
     //use array.from function for .box as querySelector All will return a note list. This will convert to proper array
     const boxes = Array.from(document.querySelectorAll('.box'));
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     twoplayergame = document.getElementById("twoplayer").checked;
     againstpcgame = docment.getElementById("againstpc").checked;
-    
+
     function gameSelector(){
     if (twoplayergame && !againstpcgame) {
         document.getElementById("tpgame");
