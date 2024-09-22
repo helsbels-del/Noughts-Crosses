@@ -11,13 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const againstpcgame = document.querySelector('#againstpc');
 
 
-    twoplayergame = document.getElementById("twoplayer").checked;
-    againstpcgame = docment.getElementById("againstpc").checked;
-
-    function gameSelector(){
-    if (twoplayergame && !againstpcgame) {
+        function gameSelector(){
+    if (twoplayergame.checked && !againstpcgame.checked) {
         document.getElementById("tpgame");
-
     }
 }
 // Declare variables and create array for grid
