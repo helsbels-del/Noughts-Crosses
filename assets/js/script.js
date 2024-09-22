@@ -8,12 +8,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const replayButton = document.querySelector('#replay');
     const reported = document.querySelector('.report');
     const twoplayergame = document.querySelector('#twoplayer');
+    const againstpcgame = document.querySelector('#againstpc')
 
-function gameSelector(){
-    radiotwoplayerChecked = document.getElementById("twoplayer").checked;
-    radioagainstpcChecked = docment.getElementById("againstpc").checked;
 
-    if (radiotwoplayerChecked && !radioagainstpcChecked) {
+    twoplayergame = document.getElementById("twoplayer").checked;
+    againstpcgame = docment.getElementById("againstpc").checked;
+    
+    function gameSelector(){
+    if (twoplayergame && !againstpcgame) {
         document.getElementById("tpgame");
 
     }
