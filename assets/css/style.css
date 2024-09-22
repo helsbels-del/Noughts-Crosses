@@ -26,6 +26,14 @@
 
 } 
 
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "SUSE", sans-serif; 
+    color: hsl(208, 100%, 18%);
+    font-size: 20px;   
+}
+
 .welcome-screen {
     display: grid;
     margin-top: 50px; 
@@ -60,10 +68,7 @@
 .hide {
     display: none !important;
 }
-.oxpicture {
-    margin-top: 50px;
-    padding-left: 50px;
-    }    
+
 
 .game-board {
     margin: 30px auto;
