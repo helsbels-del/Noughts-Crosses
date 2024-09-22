@@ -153,7 +153,7 @@ const replayGame = () => {
 //click handler to reset game
 
     replayButton.addEventListener('click', replayGame);
-});
+
 
 //tally score
 
@@ -166,3 +166,4 @@ function countScoreX() {
     let oldscoreX = parseInt(document.getElementById("scoreX").innerText);
     document.getElementById("scoreX").innerText = ++oldscoreX;
 }
+});
