@@ -179,4 +179,22 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldscoreX = parseInt(document.getElementById("scoreX").innerText);
         document.getElementById("scoreX").innerText = ++oldscoreX;
     }
+    //Play against computer game
+
+    function goFirst(){
+        currentPlayer = Math.random() > 0.5 ? X : O ; 
+    }
+
+    // Implement playerAction function Represents a turn in the game. This function will be called when a person clicks on a box
+
+    playerAction = (box, index) => {
+        if (isValidAction(box) && isGameActive) {
+            box.innerText = currentPlayer;
+            goFirst();
+            box.classList.add(`player${currentPlayer}`);
+            updateScore(index);
+            handleResultValidation();
+            changePlayer();
+        }
+    }
 });
