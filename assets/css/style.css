@@ -4,18 +4,16 @@
 
 * {
     padding: 0;
-    margin: 0;
-    
+    margin: 0;    
 }
 
-/*.welcomepage{
-    display: none;
-}*/
+/* First section styinh */
 .page {
     background-color:rgb(14, 186, 238);
     height: 100vh;
     padding-top: 1px;
 }
+/* Title of game which is on all sections */
 
 .heading {
     display: flex;
@@ -24,19 +22,15 @@
     margin-top: 50px;
     font-family:  "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
-    font-size: 30px;
-    
+    font-size: 30px;   
 
 } 
 
 .welcome-screen {
     display: grid;
-    margin-top: 50px;
-    
-    
-    
+    margin-top: 50px; 
+   
 }
-
 
 .game-type {
     font-family:  "SUSE", sans-serif;
