@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerCall = document.querySelector('.call-player');
     const replayButton = document.querySelector('#replay');
     const playButton = document.querySelector('#play');
+    const homeButton = document.querySelector('#home');
     const reported = document.querySelector('.report');
     const twoplayergame = document.querySelector('#twoplayer');
     const againstpcgame = document.querySelector('#againstpc');
@@ -24,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
     playButton.addEventListener('click', gameSelector);
+
+    function homeSelector () {
+        document.getElementById("page");
+    }
+
+    homeButton.addEventListener('click', homeSelector);
 
 // Declare variables and create array for grid
 
