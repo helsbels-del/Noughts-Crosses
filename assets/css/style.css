@@ -153,12 +153,12 @@ h2 {
     margin-top: 10px;*/
 }
 
-.button {
+.button, .playbutton{
     display: flex;   
     justify-content: center;   
     margin-top: 30px;
 }
-#replay {
+#replay, #play{
     background-color: hsl(208, 100%, 18%);
     color: rgb(14, 186, 238);
     padding: 10px;    
