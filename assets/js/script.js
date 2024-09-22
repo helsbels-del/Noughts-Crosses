@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const replayButton = document.querySelector('#replay');
     const reported = document.querySelector('.report');
     const twoplayergame = document.querySelector('#twoplayer');
-    const againstpcgame = document.querySelector('#againstpc')
+    const againstpcgame = document.querySelector('#againstpc');
 
 
     twoplayergame = document.getElementById("twoplayer").checked;
