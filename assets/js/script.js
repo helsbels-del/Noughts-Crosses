@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
     playButton.addEventListener('click', gameSelector);
 
-    function homeSelector () {
+    function homeSelector() {
         document.getElementById("page");
     }
 
