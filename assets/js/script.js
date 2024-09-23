@@ -31,8 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("showGame").style.display='block';
         if (twoplayergame.checked) {
             document.getElementById("tpgame").style.visabiliy='visible';
+            document.getElementById('pcgame').style.visibility='hidden';
         } else if (againstpcgame.checked) {
             document.getElementById('pcgame').style.visabiliy='visible';
+            document.getElementById('tpgame').style.visibility='hidden';
         }
         }
 
