@@ -70,7 +70,7 @@ h2 {
 }
 
 
-.game-board, .game-board-pc {
+.game-board {
     margin: 30px auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -78,7 +78,7 @@ h2 {
     max-width: 300px;
 }
 
-.box, .box-pc {
+.box {
     border: 2px solid rgb(14, 186, 238);
     min-width: 100px;
     min-height: 100px;
