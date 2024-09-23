@@ -118,8 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (box.innerText === 'O' || box.innerText === 'X') {
             return false;
         }
+        let boxIndex = boxes.indexOf(box);
+        console.log("the box index chosen is;", boxIndex);
         return true;
-    };
+    }
     // updates the current player score at end of game
     const updateScore = (index) => {
         game[index] = currentPlayer;
