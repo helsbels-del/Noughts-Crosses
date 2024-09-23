@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let game = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'O';
     let isGameActive = true;
-    let emptyBoxes = [1,2,3,4,5,6,7,8,9];
+    let emptyBoxes = [0,1,2,3,4,5,6,7,8];
 
     // Endgame states 
 
@@ -118,8 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (box.innerText === 'O' || box.innerText === 'X') {
             return false;
         }
+    //find which box has been checked
         let boxIndex = boxes.indexOf(box);
         console.log("the box index chosen is;", boxIndex);
+    //find that value in the emptyBoxes array
+    let emptyBoxIndex = emptyBoxes.indexOf(boxIndex);
+    //and remove it
+    emptyBoxes.splice(emptyBoxIndex, 1);
+    console.log("we are left with empty boxes;", emptyBoxes);
         return true;
     }
     // updates the current player score at end of game
