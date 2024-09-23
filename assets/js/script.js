@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const twoplayergame = document.querySelector('#twoplayer');
     const againstpcgame = document.querySelector('#againstpc');
 
-    // Declare variables and create array for grid
+    // Declare variables and create array for grid twoplayer game
 
     let game = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'O';
     let isGameActive = true;
 
-    // Endgame states
+    // Endgame states for two player game
 
     const PLAYERO_WINS = 'PLAYERO_WINS';
     const PLAYERX_WINS = 'PLAYERX_WINS';
