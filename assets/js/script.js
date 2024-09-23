@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function gameSelector() {
         document.getElementById("page").style.display = 'none';
-        document.getElementById("showGame")
+        document.getElementById("showGame").style.display='block';
         if (twoplayergame.checked) {
             document.getElementById("tpgame").style.display = 'block';
         } else if (againstpcgame.checked) {
