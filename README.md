@@ -1,6 +1,6 @@
 # Noughts and Crosses
 ## Introduction
-Noughts and Crosses is a 2 player game for players age 4+. 
+Noughts and Crosses is a 2 player game for players age 6+. 
 The idea of the game is to get 3 O's or 3 X's in a row either horizontally, vertically or diagonally.
 
 
@@ -17,7 +17,7 @@ Background color rgb (14,186,238)
 Color hsl (208, 100%, 18%)
 
 
-![Header at 320px width](assets/images/Heading%20320px.png)
+![Header at 320px width](assets/images/Heading320px.png.png)
 
 Game Board Area
 
@@ -26,7 +26,7 @@ Background color rgb (206, 206, 218)
 
 Border color rgb (14, 186, 238). This is the same as the page background color so it gives the effect of gaps between the boxes.
 
-![game-board 320px width](assets/images/game-board%20320px.png)
+![game-board 320px width](assets/images/game-board-320px.png.png)
 
 
 Players area
