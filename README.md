@@ -17,7 +17,7 @@ Background color rgb (14,186,238)
 Color hsl (208, 100%, 18%)
 
 
-![Header at 320px width](assets/images/Heading320px.png.png)
+![Header at 320px width](assets/images/Heading320px.png)
 
 Game Board Area
 
@@ -26,7 +26,7 @@ Background color rgb (206, 206, 218)
 
 Border color rgb (14, 186, 238). This is the same as the page background color so it gives the effect of gaps between the boxes.
 
-![game-board 320px width](assets/images/game-board-320px.png.png)
+![game-board 320px width](assets/images/game-board-320px.png)
 
 
 Players area
