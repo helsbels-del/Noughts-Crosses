@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let game = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'O';
     let isGameActive = true;
+    let emptyBoxes = [1,2,3,4,5,6,7,8,9];
 
     // Endgame states 
 
