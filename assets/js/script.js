@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("page").style.display = 'none';
         document.getElementById("showGame").style.display='block';
         if (twoplayergame.checked) {
-            document.getElementById("tpgame").style.display = 'block';
+            document.getElementById("tpgame").style.visabiliy='visible';
         } else if (againstpcgame.checked) {
-            document.getElementById('pcgame').style.display = 'block';
+            document.getElementById('pcgame').style.visabiliy='visible';
         }
         }
 
