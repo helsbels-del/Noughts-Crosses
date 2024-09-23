@@ -146,7 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function pcsTurn() {
         let pcsChoice = emptyBoxes[(Math.floor(Math.random()*emptyBoxes.length))];
-        console.log("PC has choosen box;", pcsChoice);        
+        console.log("PC has choosen box;", pcsChoice); 
+        
+        playerAction(boxes[pcsChoice], pcsChoice);
     }
 
     // Implement playerAction function Represents a turn in the game. This function will be called when a person clicks on a box
