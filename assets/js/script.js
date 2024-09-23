@@ -129,6 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPlayer = currentPlayer === 'O' ? 'X' : 'O';
         playerCall.innerText = currentPlayer;
         playerCall.classList.add(`player${currentPlayer}`);
+    // PC game and PCs turn
+        if (againstpcgame.checked && currentPlayer === 'X'){
+            pcsTurn();
+        }
+    }
+
+    function pcsTurn() {
+        
     }
 
     // Implement playerAction function Represents a turn in the game. This function will be called when a person clicks on a box
@@ -182,10 +190,5 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldscoreX = parseInt(document.getElementById("scoreX").innerText);
         document.getElementById("scoreX").innerText = ++oldscoreX;
     }
-    //Play against computer game
-
-    function goFirst(){
-        currentPlayer = Math.random() > 0.5 ? X : O ; 
-    }
-
+    
     });
