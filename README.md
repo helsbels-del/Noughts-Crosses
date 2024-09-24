@@ -20,6 +20,9 @@ Main page at 320px
 
 ![Main page at 320px](assets/images/mainPage.png)
 
+Main page at 786px 
+
+![Main page at 768px](assets/images/mainPage768px.png)
 Header at 320px width
 
 
