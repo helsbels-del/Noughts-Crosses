@@ -23,19 +23,34 @@ Main page at 320px
 Main page at 786px 
 
 ![Main page at 768px](assets/images/mainPage768px.png)
+
+
+
+I chose Background color rgb (14,186,238) for the pages in the game. This is a nice vibrant light blue color.
+
+I chose Color hsl (208, 100%, 18%) for the text which is a dark blue that stands out well against the light blue background.
+
+I also added a dotted border around the game-type div and choose a yellow color for this, as a contrast to the blue.
+
+The game-type area is wherethe choices are to choose which game you want to play.
+
+![Game-tyoe area](assets/images/game-type-area.png)
+
+Underneath the game-type area is the start game button.
+
+Here I used the dark blue color hsl (208, 100%, 18%) for the background and the light blue color rgb (14, 186, 238) for the text, in contract to the page colors so that this stands out well.
+
+![start Button](assets/images/startButton.png)
+
+
+
 Header at 320px width
-
-
-Background color rgb (14,186,238)
-
-Color hsl (208, 100%, 18%)
-
 
 ![Header at 320px width](assets/images/Heading320px.png)
 
 Game Board Area
 
-Background color rgb (206, 206, 218)
+For the game grid I used Background color rgb (206, 206, 218) which is a light grey colour which goes nicely with the blue and yellow colors already choosen.
 
 
 Border color rgb (14, 186, 238). This is the same as the page background color so it gives the effect of gaps between the boxes.
