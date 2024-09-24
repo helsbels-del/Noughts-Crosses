@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function homeSelector() {
         document.getElementById("page").style.display = 'block';
-        document.getElementById("tpgame").style.display = 'none';
-        document.getElementById("pcgame").style.display = 'none';
+        document.getElementById("showgame").style.display = 'none';
+        
     }
-
+    
     homeButton.addEventListener('click', homeSelector);
 
     /*
