@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box.classList.remove('playerO');
             box.classList.remove('playerX');
         });
-    }
+    };
     // Attach event listener to each box in the game grid
 
     boxes.forEach((box, index) => {
