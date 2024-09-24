@@ -1,7 +1,13 @@
 # Noughts and Crosses
 ## Introduction
-Noughts and Crosses is a 2 player game for players age 6+. 
+I decided to create a Noughts and Crosses game which has the option to play a two player game or to play against the computer. 
+
 The idea of the game is to get 3 O's or 3 X's in a row either horizontally, vertically or diagonally.
+
+I have created an opening page where you choose which game you would like to play.
+
+Each game has a home button to return back to the main page.
+
 
 
 
@@ -9,6 +15,11 @@ The idea of the game is to get 3 O's or 3 X's in a row either horizontally, vert
 ![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
 ## Features 
+
+Main page at 320px 
+
+![Main page at 320px](assets/images/mainPage.png)
+
 Header at 320px width
 
 
