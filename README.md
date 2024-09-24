@@ -64,6 +64,11 @@ Players area
 
 ![players-areaX](assets/images/players-areaX.png)
 
+![home page button](assets/images/homePagebtn.png)
+
+![replay button](assets/images/replayButton.png)
+
+
 
 ### Existing Features
 
