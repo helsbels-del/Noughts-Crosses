@@ -10,7 +10,7 @@
 /* First section styling */
 .page {
     background-color:#9ddaec;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 1px;
 }
 /* Title of game which is on all sections */
