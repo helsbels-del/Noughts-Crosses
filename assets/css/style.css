@@ -16,8 +16,7 @@
 /* Title of game which is on all sections */
 
 .heading {
-    display: flex;
-    
+    display: flex;    
     justify-content: center;
     margin-top: 50px;
     font-family:  "SUSE", sans-serif;
@@ -148,11 +147,9 @@ h2 {
     flex-wrap: wrap;
     padding-top: 20px;
     font-size: 30px;
-   
-
-    /*margin-left: 100px;
-    margin-top: 10px;*/
+      
 }
+
 
 .button, .playbutton, .homebutton{
     display: flex;   
@@ -161,14 +158,12 @@ h2 {
 }
 #replay, #play, #home{
     background-color: hsl(208, 100%, 18%);
-    color: #9ddaec;
+    color:  rgb(14,186,238);
     padding: 10px;    
     font-size: 20px;   
     cursor: pointer;
     border: none;
 }
 
-#draw {
-    color: lightgreen;
-}
+
 
