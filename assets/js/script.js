@@ -127,11 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
     emptyBoxes.splice(emptyBoxIndex, 1);
     console.log("we are left with empty boxes;", emptyBoxes);
         return true;
-    }
+    };
     // updates the current player score at end of game
     const updateScore = (index) => {
         game[index] = currentPlayer;
-    }
+    };
     // changePlayer function to update player display
     const changePlayer = () => {
         playerCall.classList.remove(`player${currentPlayer}`);
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (againstpcgame.checked && currentPlayer === 'X'){
             pcsTurn();
         }
-    }
+    };
 
     function pcsTurn() {
         let pcsChoice = emptyBoxes[(Math.floor(Math.random()*emptyBoxes.length))];
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             handleResultValidation();
             changePlayer();
         }
-    }
+    };
 
     // Reset game 
 
