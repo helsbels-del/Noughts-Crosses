@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meat tags for search engines-->
-    <meta name="description"  content="noughts and crosses game, two player game, play against computer">
-    <meta name="keywaords" content="noughts, crosses, tic, tac, toe">
+    <meta name="description" content="noughts and crosses game, two player game, play against computer">
+    <meta name="keywords" content="noughts, crosses, tic, tac, toe">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   
+
     <title>Noughts and Crosses</title>
 </head>
+
 <body>
     <!-- Welcome page -->
     <section class="page" id="page">
-    <h1 class="heading">Noughts & Crosses</h1>  
-    <!-- Section to choose which type of game to play -->  
-    <div class="welcome-screen">
-    <div class="game-type">
-    <p id="question">How would you like to play?</p>
-    <br>
-    <div class="buttons">
-    <input type="radio" class="game-choice" id="twoplayer" name="game-choice" checked>
-    <label for="twoplayer">2 player game</label>    
-    <br>
-    <input type="radio" class="game-choice" id="againstpc" name="game-choice">
-    <label for="againstpc">Play against computer</label>
-    </div>
-    </div>
-    <!-- play button -->
-<div class="playbutton">
-    <button id="play">Start Game</button>
-</div>
-    </div>
-   
+        <h1 class="heading">Noughts & Crosses</h1>
+        <!-- Section to choose which type of game to play -->
+        <div class="welcome-screen">
+            <div class="game-type">
+                <p id="question">How would you like to play?</p>
+                <br>
+                <div class="buttons">
+                    <input type="radio" class="game-choice" id="twoplayer" name="game-choice" checked>
+                    <label for="twoplayer">2 player game</label>
+                    <br>
+                    <input type="radio" class="game-choice" id="againstpc" name="game-choice">
+                    <label for="againstpc">Play against computer</label>
+                </div>
+            </div>
+            <!-- play button -->
+            <div class="playbutton">
+                <button id="play">Start Game</button>
+            </div>
+        </div>
+
     </section>
     <!-- Two game player page -->
-<section class="page" id="showGame" hidden>
-    <h1 class="heading">Noughts & Crosses</h1>
-    <h2 id="tpgame">Two player game</h2>
-    <h2 id="pcgame">Play against computer. <br> Computer is X, O goes first.</h2>
-    <!-- shows result of game. Is hidden until game  is over. Controlled in JavaScript.-->
-     <div>
-<div class="call report hide"></div>
-</div>
-<!-- Game grid for noughts and crosses -->
-    <div class="game-board">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    </div>
-<!-- States which players turn it is -->    
-<div class="players">
-    Player <span class="call-player playerO">O</span>'s turn
-</div>
-<!-- Score tally section -->
-<div class="score-tally">
-    <p class="score">Games won by <span class="yellowO">O</span>:<span id="scoreO">0</span></p>
-    <br>
-    <p class="score">Games won by <span class="blueX">X</span>:<span id="scoreX">0</span></p>
+    <section class="page" id="showGame" hidden>
+        <h1 class="heading">Noughts & Crosses</h1>
+        <h2 id="tpgame">Two player game</h2>
+        <h2 id="pcgame">Play against computer. <br> Computer is X, O goes first.</h2>
+        <!-- shows result of game. Is hidden until game  is over. Controlled in JavaScript.-->
+        <div>
+            <div class="call report hide"></div>
+        </div>
+        <!-- Game grid for noughts and crosses -->
+        <div class="game-board">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <!-- States which players turn it is -->
+        <div class="players">
+            Player <span class="call-player playerO">O</span>'s turn
+        </div>
+        <!-- Score tally section -->
+        <div class="score-tally">
+            <p class="score">Games won by <span class="yellowO">O</span>:<span id="scoreO">0</span></p>
+            <br>
+            <p class="score">Games won by <span class="blueX">X</span>:<span id="scoreX">0</span></p>
 
-</div>
-<!-- replay button -->
-<div class="button">
-    <button id="replay">Replay</button>
-</div>
+        </div>
+        <!-- replay button -->
+        <div class="button">
+            <button id="replay">Replay</button>
+        </div>
 
-<!-- Home button -->
-<div class="homebutton">
-    <button id="home">Home Page</button>
-</div>
-</section>
+        <!-- Home button -->
+        <div class="homebutton">
+            <button id="home">Home Page</button>
+        </div>
+    </section>
 
 
-<!-- link to JS -->
-  <script src="assets/js/script.js"></script> 
+    <!-- link to JS -->
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
