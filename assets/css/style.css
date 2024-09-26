@@ -1,52 +1,52 @@
-
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
 * {
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
 /* First section styling */
 .page {
-    background-color:rgb(14,186,238);
+    background-color: rgb(14, 186, 238);
     min-height: 100vh;
     padding-top: 1px;
 }
+
 /* Title of game which is on all sections */
 
 .heading {
-    display: flex;    
+    display: flex;
     justify-content: center;
     margin-top: 50px;
-    font-family:  "SUSE", sans-serif;
+    font-family: "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
-    font-size: 30px;   
+    font-size: 30px;
 
-} 
+}
 
 h2 {
     display: flex;
     justify-content: center;
-    font-family: "SUSE", sans-serif; 
+    font-family: "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 .welcome-screen {
     display: grid;
-    margin-top: 50px; 
-   
+    margin-top: 50px;
+
 }
 
 .game-type {
-    font-family:  "SUSE", sans-serif;
+    font-family: "SUSE", sans-serif;
     color: hsl(208, 100%, 18%);
     margin-top: 30px;
     margin-bottom: 30px;
     justify-self: center;
     font-size: 20px;
-    border: 5px dotted yellow ; 
+    border: 5px dotted yellow;
 }
 
 .game-choice {
@@ -78,7 +78,7 @@ h2 {
 }
 
 .box {
-    border: 2px solid rgb(14,186,238);
+    border: 2px solid rgb(14, 186, 238);
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -90,80 +90,85 @@ h2 {
 }
 
 .players {
-    color:hsl(208, 100%, 18%);
+    color: hsl(208, 100%, 18%);
     font-size: 25px;
     text-align: center;
-   
+
 
 }
 
 .playerO {
     color: rgb(236, 240, 12);
-    
+
 }
 
 .playerX {
     color: darkblue;
-   
+
 }
 
-.score-tally{
+.score-tally {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 30px;
 }
 
-#pO.playerO{
-    padding-right: 5px;
-    padding-left: 3px;
-}
-#pX.playerX{
+#pO.playerO {
     padding-right: 5px;
     padding-left: 3px;
 }
 
-.yellowO{
-    color:rgb(236, 240, 12);
+#pX.playerX {
+    padding-right: 5px;
+    padding-left: 3px;
+}
+
+.yellowO {
+    color: rgb(236, 240, 12);
     padding-right: 3px;
     padding-left: 3px;
     font-size: 25px;
 }
 
-.blueX{
-    color:darkblue;
+.blueX {
+    color: darkblue;
     padding-right: 3px;
     padding-left: 3px;
     font-size: 25px;
 }
 
-#scoreO, #scoreX {
+#scoreO,
+#scoreX {
     padding-left: 3px;
 }
 
-.call.report{
+/* Winning message */
+.call.report {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     padding-top: 20px;
     font-size: 30px;
-      
+
 }
 
-
-.button, .playbutton, .homebutton{
-    display: flex;   
-    justify-content: center;   
+/* Button styling*/
+.button,
+.playbutton,
+.homebutton {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
-#replay, #play, #home{
+
+#replay,
+#play,
+#home {
     background-color: hsl(208, 100%, 18%);
-    color:  rgb(14,186,238);
-    padding: 10px;    
-    font-size: 20px;   
+    color: rgb(14, 186, 238);
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
 }
-
-
-
