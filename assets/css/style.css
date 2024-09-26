@@ -9,7 +9,7 @@
 
 /* First section styling */
 .page {
-    background-color:#9ddaec;
+    background-color:rgb(14,186,238);
     min-height: 100vh;
     padding-top: 1px;
 }
@@ -79,7 +79,7 @@ h2 {
 }
 
 .box {
-    border: 2px solid #9ddaec;
+    border: 2px solid rgb(14,186,238);
     min-width: 100px;
     min-height: 100px;
     display: flex;
