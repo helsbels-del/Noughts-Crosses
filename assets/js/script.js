@@ -17,36 +17,42 @@ document.addEventListener('DOMContentLoaded', () => {
     let game = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'O';
     let isGameActive = true;
-    let emptyBoxes = [0,1,2,3,4,5,6,7,8];
+    let emptyBoxes = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
     // Endgame states 
 
     const PLAYERO_WINS = 'PLAYERO_WINS';
     const PLAYERX_WINS = 'PLAYERX_WINS';
     const DRAW = 'DRAW';
-    
+
     // Choosing which game to play and return to home page
 
     function gameSelector() {
         document.getElementById("page").style.display = 'none';
-        document.getElementById("showGame").style.display='block';
+        document.getElementById("showGame").style.display = 'block';
+       
         if (twoplayergame.checked) {
-            document.getElementById("tpgame").style.visabiliy='visible';
-            document.getElementById('pcgame').style.visibility='hidden';
+            
+            document.getElementById("tpgame").style.visibility = 'visible';
+            document.getElementById('pcgame').style.visibility = 'hidden';
         } else if (againstpcgame.checked) {
-            document.getElementById('pcgame').style.visabiliy='visible';
-            document.getElementById('tpgame').style.visibility='hidden';
+            document.getElementById('pcgame').style.visibility = 'visible';
+            document.getElementById('tpgame').style.visibility = 'hidden';
+           
         }
-        }
+    }
 
     playButton.addEventListener('click', gameSelector);
 
     function homeSelector() {
+        replayGame()
+        document.getElementById("scoreO").innerText = 0;
+        document.getElementById("scoreX").innerText = 0;
         document.getElementById("page").style.display = 'block';
-        document.getElementById("showgame").style.display = 'none';
-        
+        document.getElementById("showGame").style.display = 'none';
+
     }
-    
+
     homeButton.addEventListener('click', homeSelector);
 
     /*
@@ -118,14 +124,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (box.innerText === 'O' || box.innerText === 'X') {
             return false;
         }
-    //find which box has been checked
+        //find which box has been checked
         let boxIndex = boxes.indexOf(box);
-       
-    //find that value in the emptyBoxes array
-    let emptyBoxIndex = emptyBoxes.indexOf(boxIndex);
-    //and remove it
-    emptyBoxes.splice(emptyBoxIndex, 1);
-    
+
+        //find that value in the emptyBoxes array
+        let emptyBoxIndex = emptyBoxes.indexOf(boxIndex);
+        //and remove it
+        emptyBoxes.splice(emptyBoxIndex, 1);
+
         return true;
     };
     // updates the current player score at end of game
@@ -138,16 +144,16 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPlayer = currentPlayer === 'O' ? 'X' : 'O';
         playerCall.innerText = currentPlayer;
         playerCall.classList.add(`player${currentPlayer}`);
-    // PC game and PCs turn
-        if (againstpcgame.checked && currentPlayer === 'X'){
+        // PC game and PCs turn
+        if (againstpcgame.checked && currentPlayer === 'X') {
             pcsTurn();
         }
     };
 
     function pcsTurn() {
-        let pcsChoice = emptyBoxes[(Math.floor(Math.random()*emptyBoxes.length))];
-       
-        
+        let pcsChoice = emptyBoxes[(Math.floor(Math.random() * emptyBoxes.length))];
+
+
         playerAction(boxes[pcsChoice], pcsChoice);
     }
 
@@ -167,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const replayGame = () => {
         game = ['', '', '', '', '', '', '', '', ''];
-        emptyBoxes = [0,1,2,3,4,5,6,7,8];
+        emptyBoxes = [0, 1, 2, 3, 4, 5, 6, 7, 8];
         isGameActive = true;
         reported.classList.add('hide');
 
@@ -203,5 +209,5 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldscoreX = parseInt(document.getElementById("scoreX").innerText);
         document.getElementById("scoreX").innerText = ++oldscoreX;
     }
-    
-    });
+
+});
