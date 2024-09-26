@@ -120,12 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     //find which box has been checked
         let boxIndex = boxes.indexOf(box);
-        console.log("the box index chosen is;", boxIndex);
+       
     //find that value in the emptyBoxes array
     let emptyBoxIndex = emptyBoxes.indexOf(boxIndex);
     //and remove it
     emptyBoxes.splice(emptyBoxIndex, 1);
-    console.log("we are left with empty boxes;", emptyBoxes);
+    
         return true;
     };
     // updates the current player score at end of game
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function pcsTurn() {
         let pcsChoice = emptyBoxes[(Math.floor(Math.random()*emptyBoxes.length))];
-        console.log("PC has choosen box;", pcsChoice); 
+       
         
         playerAction(boxes[pcsChoice], pcsChoice);
     }
