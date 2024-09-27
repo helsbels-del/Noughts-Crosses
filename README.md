@@ -44,42 +44,56 @@ The game-type area is where the choices are to choose which game you want to pla
 
 Underneath the game-type area is the start game button.
 
-Here I used the dark blue color hsl (208, 100%, 18%) for the background and the light blue color rgb (14, 186, 238) for the text, in contract to the page colors so that this stands out well.
+Here I used the dark blue color hsl (208, 100%, 18%) for the background, in contract to the page colors so that this stands out well. For the text on the game button I chose the light blue color rgb (14, 186, 238) which is the same color as the page background.
 
 ![start Button](assets/images/startButton.png)
 
+Two Player Game Start Page
+
 ![Two player game start page](assets/images/TwoPlayerGameStartPage.png)
 
+Play Against the Computer Start Page
+
 ![Play against the computer start page](assets/images/playAgainstPcStartPage.png)
-
-
-
-
 
 Game Board Area
 
 For the game grid I used Background color rgb (206, 206, 218) which is a light grey colour which goes nicely with the blue and yellow colors already choosen.
 
-
 Border color rgb (14, 186, 238). This is the same as the page background color so it gives the effect of gaps between the boxes.
 
 ![game-board 320px width](assets/images/game-board-320px.png)
 
+Nought always goes first. I chose yellow for the nought icon. This stands out against the grey background.
 
+![nought icon](assets/images/yellowO.png)
+
+I chose dadrk blue for the X icon. This also stands out against the grey background and is in keeping with the other text color.
+
+![x icon](assets/images/blueX.png)
+
+Underneath the game grid is the palyers area, where it tells you whoes turn it is.
 Players area
 
 ![players-area](assets/images/players-area.png)
 
 ![players-areaX](assets/images/players-areaX.png)
 
-![home page button](assets/images/homePagebtn.png)
+Underneath the players area is a score tally detailing how many games have been won by O and X.
+This values increase by 1 as each player wins a game.
+
+![score tally](assets/images/score-tally.png)
+
+Underneath the score tally is a replay button. When the user clicks on this button, the game grid resets to zero.
+The score tally keeps score until the home page button is clicked.
 
 ![replay button](assets/images/replayButton.png)
 
+The home page buttn is underneath the replay button and this takes the user back to the home page where they can switch game type or start a fresh game of the same type they have been playing.
+
+![home page button](assets/images/homePagebtn.png)
 
 
-
-### Existing Features
 
 
 ### Features Left to Implement
