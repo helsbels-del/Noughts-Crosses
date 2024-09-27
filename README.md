@@ -141,7 +141,7 @@ I ran the lighthouse tester and got good results.
 ## Deployment
 
 To deploy my project, I went to my Github repository and in the settings tab, I selected the master branch and waited for my project to be deployed.
-Here is the link : 
+Here is the link : https://helsbels-del.github.io/Noughts-Crosses/ 
 
 
 ## Credits 
