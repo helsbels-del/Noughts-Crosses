@@ -1,10 +1,10 @@
 # Noughts and Crosses
 ## Introduction
-I decided to create a Noughts and Crosses game which has the option to play a two player game or to play against the computer. 
+I have created a Noughts and Crosses game which has the option to play a two player game or to play against the computer. 
 
 The idea of the game is to get 3 O's or 3 X's in a row either horizontally, vertically or diagonally.
 
-I have created an opening page where you choose which game you would like to play.
+I have created an opening page where you choose which game type you would like to play.
 
 Each game has a home button to return back to the main page.
 
@@ -12,7 +12,7 @@ Each game has a home button to return back to the main page.
 
 
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Mockup](assets/images/AmIResponsiveImage.png)
 
 ## Features 
 
@@ -24,7 +24,13 @@ Main page at 786px
 
 ![Main page at 768px](assets/images/mainPage768px.png)
 
+Main page at 1042px
 
+![Main page at 1024px](assets/images/mainPage1024px.png)
+
+Main Page at 1440px
+
+![Main page at 1440px](assets/images/mainPage1440px.png)
 
 I chose Background color rgb (14,186,238) for the pages in the game. This is a nice vibrant light blue color.
 
@@ -32,9 +38,9 @@ I chose Color hsl (208, 100%, 18%) for the text which is a dark blue that stands
 
 I also added a dotted border around the game-type div and choose a yellow color for this, as a contrast to the blue.
 
-The game-type area is wherethe choices are to choose which game you want to play.
+The game-type area is where the choices are to choose which game you want to play.
 
-![Game-tyoe area](assets/images/game-type-area.png)
+![Game-type area](assets/images/game-type-area.png)
 
 Underneath the game-type area is the start game button.
 
@@ -42,11 +48,13 @@ Here I used the dark blue color hsl (208, 100%, 18%) for the background and the 
 
 ![start Button](assets/images/startButton.png)
 
+![Two player game start page](assets/images/TwoPlayerGameStartPage.png)
+
+![Play against the computer start page](assets/images/playAgainstPcStartPage.png)
 
 
-Header at 320px width
 
-![Header at 320px width](assets/images/Heading320px.png)
+
 
 Game Board Area
 
@@ -67,6 +75,7 @@ Players area
 ![home page button](assets/images/homePagebtn.png)
 
 ![replay button](assets/images/replayButton.png)
+
 
 
 
