@@ -121,22 +121,22 @@ Play Against Computer - X Wins
 
 ### Features Left to Implement
 
-Currently in the play against computer game, teh computer chooses its go by random. My plan would be to update this to a more sophisticated system where the computer move is more educated.
+Currently in the play against computer game, the computer chooses its go by random. My plan would be to update this to a more sophisticated system where the computer move is more educated.
 
 
 ## Testing 
 
 I have tested all the buttons and results of the games. I have made sure that the game resets one the home button has been clicked.
+The game is responsive and looks good on all screen sizes and also looks good on differetn web browsers.
 
 ### Validator Testing 
 
 I ran my html code through the html validator and got no errors. 
 I also ran my css code through the css validator and got no errors.
 I ran my JavaScript code throught the JavaScript hint validator and got no errors.
+I ran the lighthouse tester and got good results.
 
-
-### Unfixed Bugs
-
+![lighthouse score](assets/images/LighthouseScore.png)
 
 ## Deployment
 
