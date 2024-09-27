@@ -93,6 +93,33 @@ The home page buttn is underneath the replay button and this takes the user back
 
 ![home page button](assets/images/homePagebtn.png)
 
+Winning scenarios for each game type
+
+Two Player Game - Draw
+
+![Two player game draw](assets/images/twoPlayerGameDraw.png)
+
+Two Player Game - O Wins
+
+![Two player game O wins](assets/images/twoPlayerGameOwins.png)
+
+Two Player Game - X Wns
+
+![Two player game X wins](assets/images/twoPlayerGameXwins.png)
+
+Play Against Computer - Draw
+
+![Play against computer draw](assets/images/playAgainstPcDraw.png)
+
+Play Against Computer - O Wins
+
+![Play against computer O wins](assets/images/playAgainstPcOwins.png)
+
+Play Against Computer - X Wins
+
+![Play against computer X wins](assets/images/playAgainstPcXwins.png)
+
+
 
 
 
