@@ -10,8 +10,6 @@ Each game has a home button to return back to the main page.
 
 
 
-
-
 ![Responsice Mockup](assets/images/AmIResponsiveImage.png)
 
 ## Features 
@@ -121,15 +119,20 @@ Play Against Computer - X Wins
 
 
 
-
-
 ### Features Left to Implement
+
+Currently in the play against computer game, teh computer chooses its go by random. My plan would be to update this to a more sophisticated system where the computer move is more educated.
 
 
 ## Testing 
 
+I have tested all the buttons and results of the games. I have made sure that the game resets one the home button has been clicked.
 
 ### Validator Testing 
+
+I ran my html code through the html validator and got no errors. 
+I also ran my css code through the css validator and got no errors.
+I ran my JavaScript code throught the JavaScript hint validator and got no errors.
 
 
 ### Unfixed Bugs
@@ -137,34 +140,22 @@ Play Against Computer - X Wins
 
 ## Deployment
 
-
+To deploy my project, I went to my Github repository and in the settings tab, I selected the master branch and waited for my project to be deployed.
+Here is the link : 
 
 
 ## Credits 
 
+Create a simple tic tac toe game using HTML, CSS, JavaScript (youtube.com)
 
-### Content 
-
-
-### Media
+https://lemmoscripts.com/wp/2018/09/03/creating-a-simple-tic-tac-toe-or-naughts-and-crosses-game-in-javascript-and-jquery/#fncomputermove
 
 
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
 
 
-[def]: assets/images/.png
+
+
+
+
+
+
